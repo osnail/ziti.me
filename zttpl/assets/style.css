@@ -1,0 +1,664 @@
+/**
+ * www.ziti.me CSS StyleSheet
+ * 2012-9-1  LAOYA
+ * Base On HTML5
+ **/
+
+/**
+ * Reset Css
+ **/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	padding:0;
+	margin:0;
+}
+fieldset, img{
+	border:0;
+}
+table{
+	border-collapse: collapse;
+	border-spacing:0;
+}
+ol,ul{
+	list-style: none;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-weight:normal;
+	font-style:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	font-size: 100%;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+/**
+ * Default Class
+ **/
+body{
+	background-color: #f1f1f1;
+	font: 12px/1.5 Helvetica,"Microsoft Yahei";
+	color: #666;
+}
+select, textarea, input{
+	font: 12px/1.5 Helvetica,"Microsoft Yahei";
+}
+a, a:visited{
+	color: #33ccff;
+	text-decoration: none;
+}
+a:hover{
+	color: #333;
+}
+header .inner .logo a, header .inner nav a em, header .search .search-go a{
+	background-image: url(images/sp-1.png);
+	background-repeat: no-repeat;
+}
+header .search .search-type .sw a, header .search .search-type .cur li,
+.work-list li .work .status em, .ilike em,
+.logareg .third-login a,
+.share a,
+.work-detail aside .status em{
+	background-image: url(images/sp-2.png);
+	background-repeat: no-repeat;
+}
+
+
+/**
+ * Header
+ **/
+header{
+	height: 75px;
+	background: rgb(51,51,51); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(51,51,51) 0%, rgb(26,26,26) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(51,51,51)), color-stop(100%,rgb(26,26,26))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(51,51,51) 0%,rgb(26,26,26) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(51,51,51) 0%,rgb(26,26,26) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(51,51,51) 0%,rgb(26,26,26) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgb(51,51,51) 0%,rgb(26,26,26) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */
+}
+header .inner{
+	width: 960px;
+	margin: 0 auto;
+}
+header .inner a{
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+header .inner .logo{
+	width: 150px;
+	height: 75px;
+	float: left;
+	margin-left: 10px;
+}
+header .inner .logo a{
+	display: block;
+	margin-top: 17px;
+	width: 150px;
+	height: 35px;
+	text-indent: -9999px;
+	background-position: 0 0;
+}
+header .inner nav{
+	height: 75px;
+	width: 252px;
+	line-height: 75px;
+	float: left;
+	margin-left: 40px;
+}
+header .inner nav a{
+	display: inline-block;
+	height: 75px;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ccc;
+}
+header .inner nav a:hover{
+	color: #fff;
+}
+header .inner nav a.show em{
+	background-position: 0 -38px;
+}
+header .inner .login{
+	margin-left: 178px;
+	width: 120px;
+	height: 75px;
+	line-height: 75px;
+	float: left;
+}
+header .inner .login a{
+	display: inline-block;
+	height: 75px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ccc;
+}
+header .inner .login a:hover{
+	color: #fff;
+}
+header .search{
+	height: 35px;
+	width: 200px;
+	float: left;
+	margin:20px 10px 0 0;
+}
+header .search .search-content{
+	width: 164px;
+	margin-right: 1px;
+	background: #666;
+	float: left;
+}
+header .search .search-type{
+	width: 40px;
+	height: 35px;
+	float: left;
+}
+header .search .search-type .cur{
+	width: 28px;
+	height: 35px;
+	float: left;
+	padding: relative;
+	overflow: hidden;
+}
+header .search .search-type .cur li{
+	width: 11px;
+	height: 11px;
+	background-position: 0 0;
+	margin: 12px 0 12px 8px;
+	text-indent: -9999px;
+}
+header .search .search-type .sw{
+	float: left;
+}
+header .search .search-type .sw a{
+	background-position: 0 -13px;
+	width: 5px;
+	height: 7px;
+	display: block;
+	margin-top: 14px;
+	text-indent: -9999px;
+}
+header .search .search-key{
+	width: 120px;
+	height: 35px;
+	background: none;
+	border: none;
+	color: #999;
+}
+header .search .search-key:focus{
+	outline: none;
+}
+header .search .search-go{
+	width: 35px;
+	height: 35px;
+	background: #666;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+header .search .search-go:hover{
+	background: #ff3399;
+}
+header .search .search-go a{
+	width: 22px;
+	height: 22px;
+	background-position: 0 -40px;
+	text-indent: -9999px;
+	display: block;
+	margin: 5px 0 0 5px;
+}
+
+/**
+ * Footer
+ **/
+footer{
+	height: 160px;
+	background: #333;
+	color: #999;
+	margin-top: 30px;
+}
+footer .inner{
+	width: 940px;
+	margin: 0 auto;
+	padding: 20px 10px 0;
+	line-height: 30px;
+}
+footer .inner a{
+	color: #ccc;
+	margin-right: 20px;
+}
+
+/**
+ * Login and Reg
+ **/
+.logareg{
+	width: 300px;
+	margin: 100px auto;
+	font-size: 14px;
+}
+.logareg dt{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.logareg dt .cur{
+	font-size: 36px;
+	margin: 0 15px;
+	vertical-align: middle;
+}
+.logareg dt a{
+	margin: 0 15px;
+}
+.logareg dd .txt{
+	width: 294px;
+	height: 44px;
+	border: #e6e6e6 solid 3px;
+	font-size: 14px;
+	text-indent: 10px;
+	color: #ccc;
+	position: relative;
+	z-index: 1;
+}
+.logareg dd .txt:focus{
+	outline: none;
+	border-color: #ff3399;
+	z-index: 2;
+}
+.logareg dd .no-bt{
+	top: -3px;
+}
+.logareg dd .login-btn{
+	background: #ff3399;
+	width: 300px;
+	height: 50px;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.logareg dd .forget{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.logareg .third-login{
+	background: #fff;
+	text-align: center;
+	line-height: 17px;
+	padding: 20px 0;
+	margin-top: 40px;
+}
+.logareg .third-login .tit{
+	display: inline-block;
+	width: 80px;
+}
+.logareg .third-login a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.logareg .third-login a.weibo{
+	background-position: -32px 0;
+}
+.logareg .third-login a.qq{
+	background-position: -32px -30px;
+}
+.logareg .third-login a.douban{
+	background-position: -32px -60px;
+}
+
+/**
+ * Main Content
+ **/
+.content-box{
+	width: 960px;
+	margin: 0 auto;
+}
+.list-box .hd{
+	height: 28px;
+	line-height: 28px;
+	margin: 35px 0 20px;
+}
+.list-box .list-type{
+	margin-left: 10px;
+	float: left;
+}
+.list-box .list-type a{
+	font-size: 14px;
+	margin-right: 20px;
+}
+.list-box .list-type a.current{
+	color: #333;
+}
+.list-box .upload-port{
+	text-align: right;
+	margin-right: 10px;
+}
+
+.work-list:after{
+	clear: both;
+	height: 0;
+	display: block;
+	content: '';
+}
+.work-list li{
+	width: 220px;
+	height: 250px;
+	position: relative;
+	float: left;
+	margin: 0 10px 10px;
+}
+.work-list li .work{
+	box-shadow: 1px 1px 3px #d7d7d7;
+}
+.work-list li .work .pic{
+	width: 220px;
+	height: 165px;
+	background: #fff;
+}
+.work-list li .work .status{
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background: #f7f7f7;
+	color: #b3b3b3;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+.work-list li .work .status em{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 2px 0 8px;
+}
+.work-list li .work .status span span{
+	vertical-align: middle;
+}
+.work-list li .work .status .views em{
+	height: 10px;
+	width: 15px;
+	background-position: 0 -24px;
+}
+.work-list li .work .status .comts em{
+	height: 10px;
+	width: 12px;
+	background-position: 0 -40px;
+}
+.work-list li .work .status .likes em{
+	height: 11px;
+	width: 12px;
+	background-position: 0 -56px;
+}
+.work-list li .author{
+	height: 37px;
+	line-height: 37px;
+}
+.work-list li .author img{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+}
+.work-list li .author a{
+	vertical-align: middle;
+}
+.work-list li .ilike{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+}
+
+.list-box .ft{
+	text-align: center;
+}
+.list-box .ft .next{
+	color: #fff;
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	background: #33ccff;
+	font-size: 18px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.list-box .ft .next:hover{
+	background: #11bbff;
+}
+
+
+
+/**
+ * Ilike
+ **/
+.ilike{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #ff3399;
+	text-align: center;
+	display: inline-block;
+}
+.ilike em{
+	width: 12px;
+	height: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	background-position: 0 -71px;
+	margin-right: 5px;
+}
+.ilike a{
+	vertical-align: middle;
+	color: #fff;
+}
+
+.share{
+
+}
+.share a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	text-indent: -9999px;
+}
+.share a.weibo{
+	background-position: -32px 0;
+}
+.share a.qq{
+	background-position: -32px -30px;
+}
+.share a.douban{
+	background-position: -32px -60px;
+}
+
+
+.corp-list{
+	border-top: #e9e9e9 solid 3px;
+	margin:30px 10px 0 10px;
+	padding-top: 20px;
+}
+.corp-list a{
+	margin-right: 20px;
+	display: inline-block;
+	font-size: 0;
+}
+.corp-list a.last{
+	margin-right: 0;
+}
+
+
+.work-detail{
+	margin-top: 30px;
+}
+.work-detail:after{
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+}
+.work-detail article{
+	width: 620px;
+	float: left;
+	margin-right: 20px;
+}
+.work-detail article .work-show{
+	background: #fff;
+	box-shadow: 1px 1px 3px #dadada;
+}
+.work-detail article .work-show .pic{
+	line-height: 0;
+}
+.work-detail article .work-show .ilike{
+	margin: 20px 0 20px 20px;
+}
+.work-detail article .work-show .share{
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 370px;
+}
+.work-detail article .icomment{
+	margin-top: 80px;
+}
+.work-detail article .icomment .head-pic{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}
+.work-detail article .icomment textarea{
+	border: #e6e6e6 solid 3px;
+	width: 555px;
+	height: 74px;
+	padding: 3px;
+	display: inline-block;
+}
+.work-detail article .icomment .push{
+	text-align: right;
+	margin-top: 7px;
+}
+.work-detail article .icomment .push a{
+	color: #fff;
+	background: #ff3399;
+	width: 80px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+
+.work-detail aside{
+	float: left;
+	width: 300px;
+}
+.work-detail aside .designer-info{
+	background: #fff;
+	box-shadow: 1px 1px 3px #dadada;
+	height: 70px;
+}
+.work-detail aside .designer-info p{
+	float: left;
+}
+.work-detail aside .designer-info p.name{
+	margin: 15px 0 0 15px;
+	width: 130px;
+}
+.work-detail aside .designer-info p.name a{
+	font-size: 14px;
+}
+.work-detail aside .designer-info p.follow{
+	margin: 25px 0 0 15px;
+}
+.work-detail aside .designer-info p.follow a{
+	background: #ff3399;
+	color: #fff;
+	padding: 2px 3px;
+}
+.work-detail aside .work-info{
+	margin-top: 20px;
+	color: #333;
+}
+.work-detail aside .work-info p{
+	margin: 0 10px;
+}
+.work-detail aside .work-info .tit{
+	font-size: 20px;
+}
+.work-detail aside .work-info .date{
+	color: #999;
+}
+.work-detail aside .work-info .intro{
+	font-size: 14px;
+	padding: 20px 0;
+}
+.work-detail aside .status{
+	border-top: #e9e9e9 solid 1px;
+	font-size: 14px;
+	padding: 15px 10px;
+}
+.work-detail aside .status em{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+	height: 10px;
+	width: 15px;
+}
+.work-detail aside .status .views em{
+	background-position: 0 -24px;
+}
+.work-detail aside .status .likes em{
+	background-position: 1px -56px;
+}
+.work-detail aside .status .likes a{
+	margin: 0 5px;
+}
+.work-detail aside .work-tags{
+	border-top: #e9e9e9 solid 1px;
+	font-size: 14px;
+	padding: 15px 10px 0;
+}
+.work-detail aside .work-tags a{
+	background: #ccc;
+	color: #fff;
+	height: 33px;
+	line-height: 33px;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0 5px 10px 0;
+}
+
+
+.comment-list{
+	border-top: #e3e3e3 solid 3px;
+	margin-top: 20px;
+}
+.comment-list dt{
+	font-size: 14px;
+}
+
+
+
