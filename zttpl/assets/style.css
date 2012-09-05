@@ -38,6 +38,9 @@ q:before,q:after{
 abbr,acronym{
 	border:0;
 }
+textarea:focus, input:focus{
+	outline: none;
+}
 
 /**
  * Default Class
@@ -659,6 +662,86 @@ footer .inner a{
 }
 .comment-list dt{
 	font-size: 14px;
+	padding-top: 15px;
+}
+.comment-list dd li{
+	padding-top: 20px;
+}
+.comment-list dd .writer-head{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: top;
+}
+.comment-list dd .comt-content{
+	display: inline-block;
+	width: 565px;
+	margin-left: 10px;
+}
+.comment-list dd .comt-content cite{
+	font-size: 14px;
+	vertical-align: top;
+}
+.comment-list dd .comt-content blockquote{
+	font-size: 14px;
+}
+.comment-list dd .comt-content .comt-time{
+	color: #999;
+}
+.comment-list dd .comt-content .sline{
+	padding: 0 5px;
+	color: #999;
+}
+.comment-list dd .r-reply{
+	background: #e6e6e6;
+	padding: 20px;
+	margin-top: 10px;
+}
+.comment-list dd .r-reply textarea{
+	border: none;
+	width: 516px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 5px;
+	display: block;
+}
+.comment-list dd .r-reply .r-reply-btn{
+	text-align: right;
+	margin-top: 10px;
+}
+.comment-list dd .r-reply a{
+	background: #ff3399;
+	border: none;
+	width: 80px;
+	height: 30px;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+.comment-list dd .more-comt{
+	margin-top: 30px;
+	text-align: center;
+}
+.comment-list dd .more-comt a{
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	background: #33ccff;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.comment-list dd .more-comt a:hover{
+	background: #1BF;
 }
 
 
