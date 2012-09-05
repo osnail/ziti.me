@@ -279,6 +279,7 @@ footer .inner a{
 	outline: none;
 	border-color: #ff3399;
 	z-index: 2;
+	color: #666;
 }
 .logareg dd .no-bt{
 	top: -3px;

@@ -45,6 +45,7 @@ class main extends top
 		if(!islogin())
 		{
 			$this->email = $_COOKIE['unames'];
+			$this->titlepre = '欢迎登陆';
 			$this->display('login.html');
 		}else{
 			if($this->spArgs('ajaxload'))
@@ -63,9 +64,15 @@ class main extends top
 		}
 	}
 
+	// 设计师列表
 	public function designer()
 	{
-		$this->display('header.html');
+		$this->display('designer.html');
+	}
+
+	// 作品秀
+	public function show(){
+		$this->display('show.html');
 	}
 
 
@@ -277,6 +284,7 @@ class main extends top
 		}
 		$this->callback = $this->spArgs('callback');
 		$this->time = time();
+		$this->titlepre = '欢迎登陆';
 		$this->email = $_COOKIE['unames'];
 		$this->display('login.html');
 	}

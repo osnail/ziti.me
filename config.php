@@ -39,7 +39,7 @@ $spConfig = array(
 				'show'     => 'main@show',      //展示
 				'designer' => 'main@designer',  //设计师
 				
-				'index'    => 'main@index',      //主页
+				'index'    => 'main@show',      //主页 现在默认展示作品列表
 				'recommend'=> 'main@recommend',  //推荐
 				'discovery'=> 'main@discovery',  //发现
 				'now'      => 'main@now',
